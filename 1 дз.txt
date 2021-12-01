@@ -1,0 +1,55 @@
+зПервое ДЗ 
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я pwd
+2) Создать папку  mkdir alina_1
+3) Зайти в папку cd alina_1
+4) Создать 3 папки mkdir dir_1 dir_2 dir_3
+5) Зайти в любоую папку cd dir_1
+6) Создать 5 файлов (3 txt, 2 json) touch 1.txt 2.txt 3.txt 4.json 5.json 
+7) Создать 3 папки mkdir dir_4 dir_5 dir_6
+8. Вывести список содержимого папки ls -la
+9) + Открыть любой txt файл vim.1.txt
+10) + написать туда что-нибудь, любой текст. i +inter { "group": 25, "name": "alina kudryashova", "age": 26} 
+
+11) + сохранить и выйти.ecc :wq
+12) Выйти из папки на уровень выше cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.ls -la mv 2.txt dir_4/2.txt mv  3.txt dir_4/3.txt
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. cp 4.json dir_5/4.json cp 5.json dir_5/5.json
+ls -la 
+15) Найти файл по имени find -name 2.txt
+./dir_1/dir_4/2.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. 
+cd dir_1 tail -f 1.txt    { "group": 25, "name": "alina kudryashova", "age": 26}
+
+17) вывести несколько первых строк из текстового файла head 1.txt
+18) вывести несколько последних строк из текстового файла tail 1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.less 1.txt q
+20) вывести дату и время date Wed Dec  1 17:56:43     2021
+
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+curl -i http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000  inter
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+vim script1.sh i 
+#!/bin/sh
+cd /Users/alift_000/Desktop/alina_1
+mkdir p1 p2 p3
+cd p1
+touch 1.txt 2.txt 3.txt 4.json 5.json
+mkdir p4 p5 p6 
+ls -la
+mv 1.txt p4/1.txt 
+mv 2.txt p4/2.txt
+
+
+
+
+=====================
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
